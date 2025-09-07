@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DiamondAI - Professional Diamond Price Prediction</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Landing Page -->
+    <div id="landing-page" class="page active">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <i class="fas fa-gem"></i>
+                    <span>DiamondAI</span>
+                </div>
+                <div class="nav-menu">
+                    <a href="#features" class="nav-link">Features</a>
+                    <a href="#pricing" class="nav-link">Pricing</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <button class="btn btn-outline" onclick="showLogin()">Login</button>
+                    <button class="btn btn-primary" onclick="showSignup()">Get Started</button>
+                </div>
+                <div class="nav-toggle" onclick="toggleMobileMenu()">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        AI-Powered Diamond Price Prediction
+                        <span class="gradient-text">with 93% Accuracy</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Professional diamond valuation using advanced machine learning. 
+                        Get instant, accurate price estimates for any diamond.
+                    </p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary btn-large" onclick="showSignup()">
+                            <i class="fas fa-rocket"></i>
+                            Start Free Trial
+                        </button>
+                        <button class="btn btn-outline btn-large" onclick="showDemo()">
+                            <i class="fas fa-play"></i>
+                            Watch Demo
+                        </button>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <div class="stat-number">93%</div>
+                            <div class="stat-label">Accuracy</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">10K+</div>
+                            <div class="stat-label">Predictions</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">500+</div>
+                            <div class="stat-label">Happy Customers</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="diamond-showcase">
+                        <div class="diamond-card">
+                            <div class="diamond-icon">💎</div>
+                            <div class="diamond-info">
+                                <div class="diamond-specs">2.0ct • Ideal • D • VVS1</div>
+                                <div class="diamond-price">$28,633</div>
+                                <div class="confidence">93% Confidence</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features">
+            <div class="container">
+                <h2 class="section-title">Why Choose DiamondAI?</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>Advanced AI Models</h3>
+                        <p>12 different ML algorithms including neural networks and ensemble methods for maximum accuracy.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3>Instant Results</h3>
+                        <p>Get diamond price predictions in under 1 second with real-time processing.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Industry Standard</h3>
+                        <p>Based on GIA standards and real market data from thousands of diamond transactions.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Detailed Analytics</h3>
+                        <p>Comprehensive reports with feature importance, confidence intervals, and market insights.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>API Integration</h3>
+                        <p>RESTful API for seamless integration with your existing systems and workflows.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Team Collaboration</h3>
+                        <p>Multi-user accounts with role-based access and shared prediction history.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section id="pricing" class="pricing">
+            <div class="container">
+                <h2 class="section-title">Simple, Transparent Pricing</h2>
+                <div class="pricing-grid">
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3>Starter</h3>
+                            <div class="price">$29<span>/month</span></div>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check"></i> 1,000 predictions/month</li>
+                            <li><i class="fas fa-check"></i> Web interface access</li>
+                            <li><i class="fas fa-check"></i> Basic analytics</li>
+                            <li><i class="fas fa-check"></i> Email support</li>
+                        </ul>
+                        <button class="btn btn-outline btn-full">Choose Starter</button>
+                    </div>
+                    <div class="pricing-card featured">
+                        <div class="pricing-badge">Most Popular</div>
+                        <div class="pricing-header">
+                            <h3>Professional</h3>
+                            <div class="price">$99<span>/month</span></div>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check"></i> 10,000 predictions/month</li>
+                            <li><i class="fas fa-check"></i> API access</li>
+                            <li><i class="fas fa-check"></i> Advanced analytics</li>
+                            <li><i class="fas fa-check"></i> Priority support</li>
+                            <li><i class="fas fa-check"></i> Team collaboration</li>
+                        </ul>
+                        <button class="btn btn-primary btn-full">Choose Professional</button>
+                    </div>
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3>Enterprise</h3>
+                            <div class="price">$499<span>/month</span></div>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check"></i> Unlimited predictions</li>
+                            <li><i class="fas fa-check"></i> White-label solution</li>
+                            <li><i class="fas fa-check"></i> Custom integrations</li>
+                            <li><i class="fas fa-check"></i> Dedicated support</li>
+                            <li><i class="fas fa-check"></i> SLA guarantee</li>
+                        </ul>
+                        <button class="btn btn-outline btn-full">Contact Sales</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Login Modal -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Welcome Back</h2>
+                <span class="close" onclick="closeModal('login-modal')">&times;</span>
+            </div>
+            <form class="auth-form" onsubmit="handleLogin(event)">
+                <div class="form-group">
+                    <label for="login-email">Email Address</label>
+                    <input type="email" id="login-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Password</label>
+                    <input type="password" id="login-password" required>
+                </div>
+                <div class="form-options">
+                    <label class="checkbox">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        Remember me
+                    </label>
+                    <a href="#" class="forgot-password">Forgot password?</a>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full">Sign In</button>
+                <div class="auth-divider">
+                    <span>or</span>
+                </div>
+                <button type="button" class="btn btn-google btn-full">
+                    <i class="fab fa-google"></i>
+                    Continue with Google
+                </button>
+                <p class="auth-switch">
+                    Don't have an account? <a href="#" onclick="switchToSignup()">Sign up</a>
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Signup Modal -->
+    <div id="signup-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Get Started Free</h2>
+                <span class="close" onclick="closeModal('signup-modal')">&times;</span>
+            </div>
+            <form class="auth-form" onsubmit="handleSignup(event)">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="signup-firstname">First Name</label>
+                        <input type="text" id="signup-firstname" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signup-lastname">Last Name</label>
+                        <input type="text" id="signup-lastname" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="signup-email">Email Address</label>
+                    <input type="email" id="signup-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="signup-company">Company (Optional)</label>
+                    <input type="text" id="signup-company">
+                </div>
+                <div class="form-group">
+                    <label for="signup-password">Password</label>
+                    <input type="password" id="signup-password" required>
+                </div>
+                <div class="form-group">
+                    <label class="checkbox">
+                        <input type="checkbox" required>
+                        <span class="checkmark"></span>
+                        I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full">Create Account</button>
+                <div class="auth-divider">
+                    <span>or</span>
+                </div>
+                <button type="button" class="btn btn-google btn-full">
+                    <i class="fab fa-google"></i>
+                    Continue with Google
+                </button>
+                <p class="auth-switch">
+                    Already have an account? <a href="#" onclick="switchToLogin()">Sign in</a>
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Dashboard Page -->
+    <div id="dashboard-page" class="page">
+        <!-- Dashboard Navigation -->
+        <nav class="dashboard-nav">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <i class="fas fa-gem"></i>
+                    <span>DiamondAI</span>
+                </div>
+                <div class="nav-menu">
+                    <a href="#" class="nav-link active" onclick="showDashboardSection('predict')">
+                        <i class="fas fa-calculator"></i>
+                        Predict
+                    </a>
+                    <a href="#" class="nav-link" onclick="showDashboardSection('history')">
+                        <i class="fas fa-history"></i>
+                        History
+                    </a>
+                    <a href="#" class="nav-link" onclick="showDashboardSection('analytics')">
+                        <i class="fas fa-chart-bar"></i>
+                        Analytics
+                    </a>
+                    <a href="#" class="nav-link" onclick="showDashboardSection('api')">
+                        <i class="fas fa-code"></i>
+                        API
+                    </a>
+                </div>
+                <div class="nav-user">
+                    <div class="user-menu">
+                        <img src="https://via.placeholder.com/32" alt="User" class="user-avatar">
+                        <span class="user-name">John Doe</span>
+                        <i class="fas fa-chevron-down"></i>
+                        <div class="user-dropdown">
+                            <a href="#"><i class="fas fa-user"></i> Profile</a>
+                            <a href="#"><i class="fas fa-cog"></i> Settings</a>
+                            <a href="#"><i class="fas fa-credit-card"></i> Billing</a>
+                            <hr>
+                            <a href="#" onclick="logout()"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Dashboard Content -->
+        <main class="dashboard-main">
+            <!-- Prediction Section -->
+            <div id="predict-section" class="dashboard-section active">
+                <div class="section-header">
+                    <h1>Diamond Price Prediction</h1>
+                    <p>Enter diamond characteristics to get an instant price estimate</p>
+                </div>
+
+                <div class="prediction-container">
+                    <div class="prediction-form-card">
+                        <h3>Diamond Characteristics</h3>
+                        <form id="prediction-form" onsubmit="handlePrediction(event)">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="carat">Carat Weight</label>
+                                    <input type="number" id="carat" step="0.01" min="0.2" max="5.0" value="1.0" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="cut">Cut Quality</label>
+                                    <select id="cut" required>
+                                        <option value="">Select Cut</option>
+                                        <option value="Fair">Fair</option>
+                                        <option value="Good">Good</option>
+                                        <option value="Very Good">Very Good</option>
+                                        <option value="Premium">Premium</option>
+                                        <option value="Ideal">Ideal</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="color">Color Grade</label>
+                                    <select id="color" required>
+                                        <option value="">Select Color</option>
+                                        <option value="D">D (Colorless)</option>
+                                        <option value="E">E (Colorless)</option>
+                                        <option value="F">F (Colorless)</option>
+                                        <option value="G">G (Near Colorless)</option>
+                                        <option value="H">H (Near Colorless)</option>
+                                        <option value="I">I (Near Colorless)</option>
+                                        <option value="J">J (Near Colorless)</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="clarity">Clarity Grade</label>
+                                    <select id="clarity" required>
+                                        <option value="">Select Clarity</option>
+                                        <option value="FL">FL (Flawless)</option>
+                                        <option value="IF">IF (Internally Flawless)</option>
+                                        <option value="VVS1">VVS1 (Very Very Slightly Included)</option>
+                                        <option value="VVS2">VVS2 (Very Very Slightly Included)</option>
+                                        <option value="VS1">VS1 (Very Slightly Included)</option>
+                                        <option value="VS2">VS2 (Very Slightly Included)</option>
+                                        <option value="SI1">SI1 (Slightly Included)</option>
+                                        <option value="SI2">SI2 (Slightly Included)</option>
+                                        <option value="I1">I1 (Included)</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="depth">Depth %</label>
+                                    <input type="number" id="depth" step="0.1" min="55" max="70" value="61.5">
+                                </div>
+                                <div class="form-group">
+                                    <label for="table">Table %</label>
+                                    <input type="number" id="table" step="0.1" min="50" max="70" value="57.0">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="x">Length (mm)</label>
+                                    <input type="number" id="x" step="0.01" min="3" max="12" value="6.0">
+                                </div>
+                                <div class="form-group">
+                                    <label for="y">Width (mm)</label>
+                                    <input type="number" id="y" step="0.01" min="3" max="12" value="6.0">
+                                </div>
+                                <div class="form-group">
+                                    <label for="z">Height (mm)</label>
+                                    <input type="number" id="z" step="0.01" min="1.5" max="8" value="3.7">
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-large btn-full">
+                                <i class="fas fa-calculator"></i>
+                                Predict Price
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="prediction-result-card">
+                        <div id="prediction-loading" class="loading-state" style="display: none;">
+                            <div class="spinner"></div>
+                            <p>Analyzing diamond characteristics...</p>
+                        </div>
+                        
+                        <div id="prediction-result" class="prediction-result" style="display: none;">
+                            <div class="result-header">
+                                <h3>Price Prediction</h3>
+                                <div class="confidence-badge">
+                                    <span id="confidence-score">93%</span> Confidence
+                                </div>
+                            </div>
+                            <div class="price-display">
+                                <div class="price-value">$<span id="predicted-price">0</span></div>
+                                <div class="price-category">
+                                    <span id="price-category">Premium</span>
+                                    <span id="category-icon">💎</span>
+                                </div>
+                            </div>
+                            <div class="prediction-details">
+                                <div class="detail-item">
+                                    <span class="detail-label">Price Range:</span>
+                                    <span class="detail-value">$<span id="price-min">0</span> - $<span id="price-max">0</span></span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Price per Carat:</span>
+                                    <span class="detail-value">$<span id="price-per-carat">0</span></span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Model Used:</span>
+                                    <span class="detail-value">Ensemble Neural Network</span>
+                                </div>
+                            </div>
+                            <div class="action-buttons">
+                                <button class="btn btn-outline" onclick="saveToHistory()">
+                                    <i class="fas fa-save"></i>
+                                    Save to History
+                                </button>
+                                <button class="btn btn-primary" onclick="generateReport()">
+                                    <i class="fas fa-file-pdf"></i>
+                                    Generate Report
+                                </button>
+                            </div>
+                        </div>
+
+                        <div id="prediction-placeholder" class="prediction-placeholder">
+                            <div class="placeholder-icon">
+                                <i class="fas fa-gem"></i>
+                            </div>
+                            <h3>Ready to Predict</h3>
+                            <p>Fill in the diamond characteristics on the left to get an instant price prediction.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Other sections will be added here -->
+            <div id="history-section" class="dashboard-section">
+                <div class="section-header">
+                    <h1>Prediction History</h1>
+                    <p>View and manage your previous diamond price predictions</p>
+                </div>
+                <div class="coming-soon">
+                    <i class="fas fa-history"></i>
+                    <h3>History Feature Coming Soon</h3>
+                    <p>Track all your predictions and build a comprehensive database.</p>
+                </div>
+            </div>
+
+            <div id="analytics-section" class="dashboard-section">
+                <div class="section-header">
+                    <h1>Analytics Dashboard</h1>
+                    <p>Insights and trends from your diamond predictions</p>
+                </div>
+                <div class="coming-soon">
+                    <i class="fas fa-chart-bar"></i>
+                    <h3>Analytics Coming Soon</h3>
+                    <p>Detailed analytics and market insights for your predictions.</p>
+                </div>
+            </div>
+
+            <div id="api-section" class="dashboard-section">
+                <div class="section-header">
+                    <h1>API Documentation</h1>
+                    <p>Integrate DiamondAI into your applications</p>
+                </div>
+                <div class="coming-soon">
+                    <i class="fas fa-code"></i>
+                    <h3>API Access Coming Soon</h3>
+                    <p>RESTful API for seamless integration with your systems.</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
